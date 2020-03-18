@@ -215,7 +215,7 @@ def merge_rep1_12_clean1_ol_files():
         op_path='/Users/salma/Research/clean_icpsr_crime/data/core_vars_outliers_rep1_12_clean1/ol_merger/ol_files_1_12_all')
 
 
-# merge_rep1_12_clean1_ol_files()
+merge_rep1_12_clean1_ol_files()
 
 
 def update_merge_vals(df, cols):
@@ -240,25 +240,25 @@ def merge_agency_lev_ol_files(cr_fl, arrests_fl, pci_fl, op_path, agency_type):
     cr_arrests_pci.to_csv(f'{op_path}/{agency_type}_all_ol.csv', index=False)
 
 
-# merge_agency_lev_ol_files(cr_fl = '/Users/salma/Research/clean_icpsr_crime/data/core_vars_outliers_rep1_12_clean1/ol_merger/ol_files_1_12_all/large_cities_crime_all_ol_merger.csv',
-#                            arrests_fl = '/Users/salma/Research/clean_icpsr_crime/data/core_vars_outliers_rep1_12_clean1/ol_merger/ol_files_1_12_all/large_cities_arrests_incarc_officers_all_ol_merger.csv',
-#                            pci_fl = '/Users/salma/Research/clean_icpsr_crime/data/core_vars_outliers_rep1_12_clean1/ol_merger/ol_files_1_12_all/large_cities_pci_emp_all_ol_merger.csv',
-#                            op_path = '/Users/salma/Research/clean_icpsr_crime/data/core_vars_outliers_rep1_12_clean1/ol_merger/ol_files_1_12_all',
-#                           agency_type = 'large_agencies')
-#
-#
-# merge_agency_lev_ol_files(cr_fl = '/Users/salma/Research/clean_icpsr_crime/data/core_vars_outliers_rep1_12_clean1/ol_merger/ol_files_1_12_all/medium_cities_crime_all_ol_merger.csv',
-#                            arrests_fl = '/Users/salma/Research/clean_icpsr_crime/data/core_vars_outliers_rep1_12_clean1/ol_merger/ol_files_1_12_all/medium_cities_arrests_incarc_officers_all_ol_merger.csv',
-#                            pci_fl = '/Users/salma/Research/clean_icpsr_crime/data/core_vars_outliers_rep1_12_clean1/ol_merger/ol_files_1_12_all/medium_cities_pci_emp_all_ol_merger.csv',
-#                            op_path='/Users/salma/Research/clean_icpsr_crime/data/core_vars_outliers_rep1_12_clean1/ol_merger/ol_files_1_12_all',
-#                           agency_type='medium_agencies')
-#
-#
-# merge_agency_lev_ol_files(cr_fl = '/Users/salma/Research/clean_icpsr_crime/data/core_vars_outliers_rep1_12_clean1/ol_merger/ol_files_1_12_all/small_cities_crime_all_ol_merger.csv',
-#                            arrests_fl = '/Users/salma/Research/clean_icpsr_crime/data/core_vars_outliers_rep1_12_clean1/ol_merger/ol_files_1_12_all/small_cities_arrests_incarc_officers_all_ol_merger.csv',
-#                            pci_fl = '/Users/salma/Research/clean_icpsr_crime/data/core_vars_outliers_rep1_12_clean1/ol_merger/ol_files_1_12_all/small_cities_pci_emp_all_ol_merger.csv',
-#                            op_path='/Users/salma/Research/clean_icpsr_crime/data/core_vars_outliers_rep1_12_clean1/ol_merger/ol_files_1_12_all',
-#                           agency_type = 'small_agencies')
+merge_agency_lev_ol_files(cr_fl = '/Users/salma/Research/clean_icpsr_crime/data/core_vars_outliers_rep1_12_clean1/ol_merger/ol_files_1_12_all/large_cities_crime_all_ol_merger.csv',
+                           arrests_fl = '/Users/salma/Research/clean_icpsr_crime/data/core_vars_outliers_rep1_12_clean1/ol_merger/ol_files_1_12_all/large_cities_arrests_incarc_officers_all_ol_merger.csv',
+                           pci_fl = '/Users/salma/Research/clean_icpsr_crime/data/core_vars_outliers_rep1_12_clean1/ol_merger/ol_files_1_12_all/large_cities_pci_emp_all_ol_merger.csv',
+                           op_path = '/Users/salma/Research/clean_icpsr_crime/data/core_vars_outliers_rep1_12_clean1/ol_merger/ol_files_1_12_all',
+                          agency_type = 'large_agencies')
+
+
+merge_agency_lev_ol_files(cr_fl = '/Users/salma/Research/clean_icpsr_crime/data/core_vars_outliers_rep1_12_clean1/ol_merger/ol_files_1_12_all/medium_cities_crime_all_ol_merger.csv',
+                           arrests_fl = '/Users/salma/Research/clean_icpsr_crime/data/core_vars_outliers_rep1_12_clean1/ol_merger/ol_files_1_12_all/medium_cities_arrests_incarc_officers_all_ol_merger.csv',
+                           pci_fl = '/Users/salma/Research/clean_icpsr_crime/data/core_vars_outliers_rep1_12_clean1/ol_merger/ol_files_1_12_all/medium_cities_pci_emp_all_ol_merger.csv',
+                           op_path='/Users/salma/Research/clean_icpsr_crime/data/core_vars_outliers_rep1_12_clean1/ol_merger/ol_files_1_12_all',
+                          agency_type='medium_agencies')
+
+
+merge_agency_lev_ol_files(cr_fl = '/Users/salma/Research/clean_icpsr_crime/data/core_vars_outliers_rep1_12_clean1/ol_merger/ol_files_1_12_all/small_cities_crime_all_ol_merger.csv',
+                           arrests_fl = '/Users/salma/Research/clean_icpsr_crime/data/core_vars_outliers_rep1_12_clean1/ol_merger/ol_files_1_12_all/small_cities_arrests_incarc_officers_all_ol_merger.csv',
+                           pci_fl = '/Users/salma/Research/clean_icpsr_crime/data/core_vars_outliers_rep1_12_clean1/ol_merger/ol_files_1_12_all/small_cities_pci_emp_all_ol_merger.csv',
+                           op_path='/Users/salma/Research/clean_icpsr_crime/data/core_vars_outliers_rep1_12_clean1/ol_merger/ol_files_1_12_all',
+                          agency_type = 'small_agencies')
 
 
 def consolidate_agency_lev_ol_files():
@@ -274,4 +274,4 @@ def consolidate_agency_lev_ol_files():
     all_ol_files.to_csv('/Users/salma/Research/clean_icpsr_crime/data/core_vars_outliers_rep1_12_clean1/ol_merger/ol_files_1_12_all/rep1_12_clean1_all_ols.csv', index=False)
 
 
-# consolidate_agency_lev_ol_files()
+consolidate_agency_lev_ol_files()

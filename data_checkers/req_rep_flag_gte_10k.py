@@ -65,7 +65,7 @@ def get_rep_1_12():
                                   fl_name='final_main_icpsr_crime_gte_10k_rep1_12')
 
 
-get_rep_1_12()
+#get_rep_1_12()
 
 
 def get_rep_1_10_11_12():
@@ -90,8 +90,10 @@ def get_rep_1_10_11_12():
 def cat_fnl_gte_10k_rep_1_12_zero_cr_drpd_zero_arsts_repl_blanks():
     df_zero_cr_drpd_zero_arsts_repl_blanks = pd.read_csv('/Users/salma/Research/clean_icpsr_crime/data/cleaned_check/final_main_rep1_12_gte_10k_0_cr_drpd_0_main_arrests_repl_with_blanks.csv')
     agncy_cat.categorize_agencies(df=df_zero_cr_drpd_zero_arsts_repl_blanks,
-                                  op_path='/Users/salma/Research/clean_icpsr_crime/data/agency_categories',
-                                  fl_name='final_main_rep1_12_gte_10k_0_cr_drpd_0_main_arrests_repl_with_blanks')
+                                  # op_path='/Users/salma/Research/clean_icpsr_crime/data/agency_categories',
+                                  op_path='/Users/salma/Research/us_crime_data_analysis/data',
+                                  #fl_name='final_main_rep1_12_gte_10k_0_cr_drpd_0_main_arrests_repl_with_blanks')
+                                  fl_name='final_main')
 
 
 cat_fnl_gte_10k_rep_1_12_zero_cr_drpd_zero_arsts_repl_blanks()
